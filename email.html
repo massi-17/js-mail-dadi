@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #00FF41;
+            font-weight: 600;
+            background-color: black;
+        }
+
+        .box {
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, 0);
+            border: 2px dashed #00FF41;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 100;
+            margin-bottom: 30px;
+            color: #008f11;
+        }
+
+        .button_riprova {
+            display: none;
+           
+        }
+
+        a {
+            background-color: black;
+            border: 2px solid #008f11;
+            color: #00FF41;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a:hover {
+            border: 2px solid #00FF41;
+
+        }
+
+        .buttonstyle {
+            background-color: black;
+            border: 2px solid #008f11;
+            color: #00FF41;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .buttonstyle:hover {
+            border: 2px solid #00FF41;
+
+        }
+        
+
+        .display_none {
+            display: none;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div id="email-form">
+            <h1>verification_form</h1>
+            <div id="container">
+                <label for="emailutente">insert_email:</label>
+                <input type="email" id="emailInput">
+                <button type="submit" onclick="check()" class="buttonstyle">login</button>
+            </div>
+        
+            <div id="esito"></div>
+                <a href="#" onclick="tryagain()" id="tryagain" class="button_riprova">try_again</a>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/email.js"></script>
+</body>
+</html>

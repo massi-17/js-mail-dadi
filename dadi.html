@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #00FF41;
+            background-color: black;
+            
+        }
+
+        #box {
+           
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px dashed #00FF41;
+            padding: 30px;
+            text-align: center;
+            
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #00FF41;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+            
+            
+        }
+        h3 a:hover {
+            color: #008f11;
+        }
+
+        
+
+        .buttonstyle {
+            background-color: black;
+            border: 2px solid #00FF41;
+            color: #00FF41;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 15px;
+            cursor: pointer;
+            font-weight: 100;
+            font-size: 30px;
+            
+        }
+
+        a:hover {
+            border: 2px solid #008f11;
+        }
+
+        #button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .display_none {
+            display: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="#" id="button" class="buttonstyle">play</a>
+
+        <div id="box" class="display_none">
+        
+        <div>
+            
+            <div>
+                <h3>player_1:</h3><span id="player1"></span>
+            </div>
+            <div>
+                <h3>CPU:</h3><span id="cpu"></span>
+            </div>
+            <h1 id="winner"></h1>
+
+            <a href="#" onclick="tryagain()" id="tryagain" class="buttonstyle">play again</a>
+        </div>
+    </div>
+
+    <script src="js/dadi.js"></script>
+</body>
+</html>
